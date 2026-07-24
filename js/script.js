@@ -138,19 +138,19 @@ function initSocialToast() {
     
     toast.classList.add("show");
     
-    // Hide after 5 seconds
+    // Hide after 7 seconds
     setTimeout(() => {
       toast.classList.remove("show");
-    }, 5000);
+    }, 7000);
   }
   
   // Show first toast after 5 seconds
   setTimeout(() => {
     showToast();
-    // Then every 25-35 seconds
+    // Then every 20 seconds
     setInterval(() => {
       showToast();
-    }, Math.floor(Math.random() * 10000) + 25000);
+    }, 20000);
   }, 5000);
 }
 initSocialToast();
